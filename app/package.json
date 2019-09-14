@@ -43,10 +43,5 @@
   "engines": {
     "node": "10.x"
   },
-  "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  }
+  "license": "MIT"
 }
