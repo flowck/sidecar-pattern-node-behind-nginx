@@ -6,5 +6,12 @@ services:
     - 3000:3000
     networks:
       - sidecar-pattern-net
+  proxy_server:
+    build: ./nginx
+    ports:
+    - 8080:80
+    networks:
+      - sidecar-pattern-net
 networks:
   sidecar-pattern-net:
+    driver: bridge
