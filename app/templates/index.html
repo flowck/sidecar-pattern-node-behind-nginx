@@ -1,0 +1,209 @@
+  <!-- Hero -->
+  <div class="hero">
+    <div class="container">
+      <h1>
+        JSONPlaceholder
+      </h1>
+
+      <p class="subtitle">
+        Fake Online REST API for Testing and Prototyping
+        <br> <b>Serving ~350M requests per month</b>
+        <br> Powered by
+        <a href="https://github.com/typicode/json-server">JSON Server</a>
+        +
+        <a href="https://github.com/typicode/lowdb">LowDB</a>
+      </p>
+
+      <!-- <p> -->
+      <!--   <a href="https://www.patreon.com/bePatron?c=784328"> -->
+      <!--     <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="217"> -->
+      <!--   </a> -->
+      <!-- </p> -->
+    </div>
+  </div>
+
+  <!-- Sponsors -->
+  <div class="sponsors">
+    <h3>Gold Sponsors</h3>
+
+    <p>
+      <a href="https://tryretool.com/?utm_source=sponsor&utm_campaign=typicode" target="_blank">
+        <img src="https://i.imgur.com/IBItATn.png" height="70px">
+      </a>
+    </p>
+
+    <p>
+      <a href="https://www.patreon.com/bePatron?c=784328">Your Company Logo Here</a>
+    </p>
+  </div>
+
+  <!-- Main -->
+  <div class="container">
+    <main>
+      <!-- Intro -->
+      <h2>Intro</h2>
+      <p>
+        JSONPlaceholder is a free online REST API that you can use whenever you need some fake data.
+        <br>It's great for tutorials, testing new libraries, sharing code examples, ...
+      </p>
+
+      <!-- Example -->
+      <h2>Example</h2>
+      <p>
+        Run this code in a console or from any site:
+      </p>
+
+      <pre><code id="example" class="javascript">fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+</code></pre>
+
+      <p>
+        <button id="run-button">Try it</button>
+      </p>
+
+      <pre><code id="result" class="json"></code></pre>
+      <span id="run-message">Congrats you've made your first call to JSONPlaceholder! 😃 🎉</span>
+
+      <p>
+        <strong>Tip</strong>: you can use
+        <b>
+          http://
+        </b> or
+        <b>
+          https://
+        </b> when making requests to JSONPlaceholder.
+      </p>
+
+      <div id="codefund"><!-- fallback content --></div>
+      <script src="https://codefund.io/properties/338/funder.js" async="async"></script>
+
+      <!-- Resources -->
+      <h2>Resources</h2>
+      <p>
+        JSONPlaceholder comes with a set of 6 common resources:
+      </p>
+
+      <table class="resources">
+        <tr>
+          <td>
+            <a href="/posts">/posts</a>
+          </td>
+          <td>100 posts</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/comments">/comments</a>
+          </td>
+          <td>500 comments</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/albums">/albums</a>
+          </td>
+          <td>100 albums</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/photos">/photos</a>
+          </td>
+          <td>5000 photos</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/todos">/todos</a>
+          </td>
+          <td>200 todos</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/users">/users</a>
+          </td>
+          <td>10 users</td>
+        </tr>
+      </table>
+
+      <p>
+        <strong>Note</strong>: resources have relations. For example:
+        <b>posts</b> have many
+        <b>comments</b>,
+        <b>albums</b> have many
+        <b>photos</b>, ... see below for routes examples.
+      </p>
+
+      <!-- Routes -->
+      <h2>Routes</h2>
+      <p>
+        All HTTP methods are supported.
+      </p>
+
+      <table>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/posts">/posts</a>
+          </td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/posts/1">/posts/1</a>
+          </td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/posts/1/comments">/posts/1/comments</a>
+          </td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/comments?postId=1">/comments?postId=1</a>
+          </td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/posts?userId=1">/posts?userId=1</a>
+          </td>
+        </tr>
+        <tr>
+          <td>POST</td>
+          <td>/posts</td>
+        </tr>
+        <tr>
+          <td>PUT</td>
+          <td>/posts/1</td>
+        </tr>
+        <tr>
+          <td>PATCH</td>
+          <td>/posts/1</td>
+        </tr>
+        <tr>
+          <td>DELETE</td>
+          <td>/posts/1</td>
+        </tr>
+        </tr>
+      </table>
+
+      <p>
+        <strong>Note</strong>: you can view detailed examples
+        <a href="guide.html">here</a>.
+      </p>
+
+      <!-- JSON Server -->
+      <h2>Use your own data</h2>
+      <!-- <p>
+        <a href="https://github.com/typicode/json-server">JSON Server</a>
+        powers this website. You can use it to create the same fake API in less than
+        <strong>30 seconds</strong> with your own data.
+      </p>
+
+      <pre><code class="bash">npm install json-server</code></pre> -->
+
+      <p>
+        With <a href="https://my-json-server.typicode.com">My JSON Server</a> online service and a simple GitHub repo, you can have your own online fake REST server in seconds.
+      </p>
+    </main>
+  </div>
