@@ -1,3 +1,6 @@
+# This docker-compose file boot the applicational container
+# and the sidecar container with a reverse proxy server
+
 version: '3'
 services:
   app:
