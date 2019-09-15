@@ -18,6 +18,8 @@ services:
     environment:
       - NGINX_HOST=app:3000
       - NGINX_PORT=80
+    # Dynamically update nginx configuration to render the environment variables
+    # before they are loaded by nginx using envsubst :)
     command: /bin/bash -c "envsubst < /etc/nginx/conf.d/default.conf > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
     networks:
       - sidecar-pattern-net
